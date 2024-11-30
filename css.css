@@ -4,3 +4,48 @@ body {
     font-family: "Comic Neue", cursive;
     font-weight: 400;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+  
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+  
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+}
+  
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+.right {
+    float: right;
+}
+
+li:last-child {
+    border-right: none;
+}
