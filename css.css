@@ -49,3 +49,7 @@ li a:hover:not(.active) {
 li:last-child {
     border-right: none;
 }
+
+py-script {
+    color: white;
+}
