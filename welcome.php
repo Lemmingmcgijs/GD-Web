@@ -1,4 +1,11 @@
 <?php
+    session_start();
+
+    $name = $_SESSION['name'] ?? 'Onbekend';
+    $email = $_SESSION['email'] ?? 'Onbekend';
+    $comment = $_SESSION['comment'] ?? 'Geen commentaar';
+    $bla = $_SESSION['bla'] ?? 'Geen extra info';
+
     $pagina = "input";
     $title = "Form test"
 ?>
@@ -14,8 +21,10 @@
         <div class="inhoud">
             <h1>Input</h1>
 
-            Welcome <?php echo $_POST["name"]; ?><br>
-            Your email address is: <?php echo $_POST["email"]; ?>
+            Welcome <?php echo $name; ?><br>
+            Your email address is: <?php echo $email; ?><br>
+            <?php echo $comment?><br>
+            <?php echo $bla?>
         </div>
 
         <footer>
