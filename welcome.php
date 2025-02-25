@@ -5,6 +5,7 @@
     $email = $_SESSION['email'] ?? 'Onbekend';
     $comment = $_SESSION['comment'] ?? 'Geen commentaar';
     $bla = $_SESSION['bla'] ?? 'Geen extra info';
+    $blaa = $_SESSION['blaa'] ?? 'Geen extra extra info';
 
     $pagina = "input";
     $title = "Form test"
@@ -25,6 +26,7 @@
             Your email address is: <?php echo $email; ?><br>
             <?php echo $comment?><br>
             <?php echo $bla?>
+            <?php echo $blaa?>
         </div>
 
         <footer>
